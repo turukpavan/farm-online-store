@@ -1,0 +1,144 @@
+/* Google Font Family  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Signika:wght@300..700&display=swap');
+
+/*  For Reference
+   font-family: "Signika", sans-serif;
+   font-family: "Poppins", sans-serif;
+ */
+
+ /* Icon Library - Get Bootstrap  */
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+ :root{
+   --header-bg-color:#149A53;
+   --header-text-color:#F4F4F1
+ }
+
+ /* Universal Selector */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    }
+    
+    /* Header Section */
+    #header{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-size: larger;
+       padding: 10px 0px;
+      background-color: var(--header-bg-color);
+      color: var(--header-text-color);
+       }
+
+ #header h2{
+    padding-left: 3dvw;
+ }
+ #header #cart{
+    padding-right: 3dvw;
+    font-size: xx-large;
+    font-weight: bold;
+ }
+
+ /* navigation section */
+ .nav_section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+padding: 0 2dvw;
+ }
+
+ .nav_section img{
+   width: 6dvw;
+ }
+
+ .nav_section ul{
+   display: flex;
+   align-items: center;
+   gap: 4dvw;
+ }
+ .nav_section ul li a{
+   text-decoration: none;
+   color: var(--header-bg-color);
+   font-size: larger;
+   text-transform: uppercase;
+   font-weight: 600;
+ }
+
+
+ /* main Section */
+ .main_section{
+   width: 80dvw;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+
+
+ }
+ /* card-section */
+ .card{
+   display: flex;
+   flex-direction: column;
+   row-gap: 2dvh;
+   width: 250px;
+   padding: 10px;
+   border: 1px solid var(--header-bg-color);
+   border-radius: 5px;
+   overflow: hidden;
+ }
+ .card img{
+   width: 100%;
+   border-radius: 5px;
+ }
+
+ .card .btn{
+   display: flex;
+   justify-content: space-around;
+ }
+
+ .card .btn .button{
+   border: none;
+   color: var(--header-text-color);
+   border-radius: 15px;
+   padding:10px 15px 8px;
+   background-color:var(--header-bg-color);
+ }
+ 
+ .likeBtn{
+   border: none;
+   color: var(--header-text-color);
+   border-radius: 15px;
+   padding:10px 15px 8px;
+   background-color:var(--header-bg-color);
+
+ }
+
+ .btnAfterClick{
+   color: rgb(238, 75, 75);
+   padding:10px 15px 8px;
+   background-color: transparent;
+   border:none;
+ }
+
+ #cart{
+   position: relative;
+ }
+ .item_count{
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   color: var(--header-text-color);
+   font-size: small;
+   padding-left: 3px;
+   background-color: rgb(244, 26, 10);
+   bottom: 0;
+   right: 40px;
+   z-index: 10;
+
+
+ }
